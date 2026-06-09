@@ -1,0 +1,165 @@
+:root {
+  --theme-color: #2563eb;
+  --base-font-size: 16px;
+  --base-line-height: 1.7;
+  --heading-color: #0f172a;
+  --sidebar-width: 290px;
+  --sidebar-background: #f8fafc;
+  --sidebar-nav-link-color: #334155;
+  --sidebar-nav-link-color--active: #1d4ed8;
+  --sidebar-nav-link-font-weight--active: 650;
+  --cover-background-color: #0f172a;
+  --cover-color: #e2e8f0;
+  --cover-heading-color: #ffffff;
+  --link-color: #1d4ed8;
+  --blockquote-border-color: #3b82f6;
+  --code-inline-background: #eff6ff;
+  --code-inline-color: #1e3a8a;
+}
+
+body {
+  color: #334155;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.cover {
+  background:
+    radial-gradient(circle at 20% 20%, rgb(37 99 235 / 35%), transparent 32%),
+    radial-gradient(circle at 80% 75%, rgb(14 165 233 / 22%), transparent 34%),
+    linear-gradient(135deg, #020617 0%, #0f172a 58%, #172554 100%) !important;
+}
+
+.cover-main {
+  max-width: 760px;
+}
+
+.cover-main h1 {
+  font-size: clamp(2.5rem, 7vw, 4.75rem);
+  font-weight: 760;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.cover-main blockquote {
+  color: #cbd5e1;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 1.5rem auto 2rem;
+  max-width: 660px;
+}
+
+.cover-main p:last-child a {
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 10px;
+  font-weight: 650;
+  margin: 0.35rem;
+  padding: 0.72rem 1.15rem;
+}
+
+.cover-main p:last-child a:first-child {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.markdown-section {
+  max-width: 920px;
+  padding: 42px 48px 72px;
+}
+
+.markdown-section h1 {
+  color: #0f172a;
+  font-size: 2.35rem;
+  letter-spacing: -0.035em;
+}
+
+.markdown-section h2 {
+  border-top: 1px solid #e2e8f0;
+  color: #0f172a;
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+  margin-top: 2.8rem;
+  padding-top: 1.8rem;
+}
+
+.markdown-section h3 {
+  color: #1e293b;
+}
+
+.markdown-section table {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #e2e8f0;
+  display: table;
+  margin: 1.4rem 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.markdown-section th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 680;
+}
+
+.markdown-section tr:nth-child(2n) {
+  background: #f8fafc;
+}
+
+.markdown-section blockquote {
+  background: #eff6ff;
+  border-radius: 0 10px 10px 0;
+  color: #1e3a8a;
+  padding: 0.8rem 1.2rem;
+}
+
+.markdown-section .mermaid {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  margin: 1.6rem 0;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.sidebar {
+  border-right: 1px solid #e2e8f0;
+  padding-top: 18px;
+}
+
+.sidebar-nav > ul > li > a {
+  font-weight: 600;
+}
+
+.search {
+  border-bottom: 1px solid #e2e8f0 !important;
+  margin-bottom: 12px;
+  padding: 12px 16px !important;
+}
+
+.search input {
+  background: #ffffff;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 9px;
+  padding: 9px 11px !important;
+}
+
+.pagination-item-title {
+  color: #1d4ed8;
+  font-weight: 650;
+}
+
+@media (max-width: 768px) {
+  .markdown-section {
+    padding: 28px 22px 56px;
+  }
+
+  .markdown-section h1 {
+    font-size: 2rem;
+  }
+
+  .markdown-section table {
+    display: block;
+    overflow-x: auto;
+  }
+}
