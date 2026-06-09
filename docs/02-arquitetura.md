@@ -85,6 +85,31 @@ Ela devolve:
 Com isso, trocar Gemini por OpenAI, criar fallback ou comparar modelos não exige
 reescrever o fluxo de negócio.
 
+### Isolando o provedor
+
+```ts
+interface AIProvider {
+  generate(request: AIRequest): Promise<AIResult>;
+}
+
+class AIGateway {
+  constructor(
+    private providers: Record<string, AIProvider>,
+    private defaultProvider: string,
+  ) {}
+
+  generate(request: AIRequest, name = this.defaultProvider) {
+    const provider = this.providers[name];
+    if (!provider) throw new Error("Provider not configured");
+    return provider.generate(request);
+  }
+}
+```
+
+O SDK específico fica dentro da implementação de `AIProvider`. O restante da
+aplicação depende apenas do contrato. Veja o
+[gateway completo](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/ai/gateway.ts).
+
 ## Mantenha contratos internos
 
 Defina contratos para os principais casos de uso:
@@ -101,6 +126,26 @@ Defina contratos para os principais casos de uso:
 Os nomes e formatos são seus. O importante é impedir que cada tela invente uma
 versão diferente da mesma operação.
 
+### Mantendo a rota curta
+
+```ts
+export async function POST(request: NextRequest) {
+  const input = chatInputSchema.parse(await request.json());
+  const result = await processMessage(chatDependencies, input);
+
+  return NextResponse.json({
+    reply: result.reply,
+    intent: result.triage.intent,
+  });
+}
+```
+
+A rota converte HTTP em uma chamada de aplicação. Persistência, triagem e
+geração ficam no orquestrador. Veja a
+[rota de referência](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/api/chat-route.ts)
+e o
+[processamento da mensagem](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/chat/process-message.ts).
+
 ## Pense na evolução do banco
 
 SQLite funciona bem para protótipos, demonstrações e ambientes de baixa
@@ -116,7 +161,7 @@ concorrência. Planeje migração quando surgirem:
 A mudança para PostgreSQL ou outro banco é mais simples quando o domínio não
 depende de recursos exclusivos do banco inicial.
 
-## Critério de saída
+## Antes de seguir
 
 Avance quando cada responsabilidade tiver um único lugar claro e nenhuma chave
 de IA, consulta de banco ou regra de negócio depender de um componente visual.

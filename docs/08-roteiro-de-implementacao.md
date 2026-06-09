@@ -45,6 +45,25 @@ normalização de erros e observabilidade básica.
 **Saída:** o provedor pode ser substituído sem alterar a interface ou as regras
 de persistência.
 
+Uma integração mínima pode ser montada nesta ordem:
+
+```ts
+const dependencies = {
+  ai: createAIGateway(),
+  messages: new SqlMessageRepository(database),
+  sessions: new SqlSessionRepository(database),
+  specialists: new SettingsSpecialistCatalog(database),
+};
+
+const result = await processMessage(dependencies, {
+  sessionId,
+  message,
+});
+```
+
+Esse ponto de composição é onde tecnologias concretas encontram contratos do
+domínio. Veja a [referência de código](10-referencia-de-codigo.md).
+
 ## Fase 5: classificação e especialidades
 
 Defina categorias, contrato estruturado, fallback e instruções por

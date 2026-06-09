@@ -8,4 +8,6 @@
 - [7. Segurança e privacidade](docs/07-seguranca-e-privacidade.md)
 - [8. Roteiro de implementação](docs/08-roteiro-de-implementacao.md)
 - [9. Checklist de validação](docs/09-checklist-de-validacao.md)
+- [10. Referência de código](docs/10-referencia-de-codigo.md)
+- [Exemplos completos](examples/README.md)
 - [Glossário](docs/glossario.md)

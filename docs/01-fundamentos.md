@@ -94,7 +94,7 @@ Crie um documento curto com:
 
 Esse registro será a referência para arquitetura, UX, dados e testes.
 
-## Critério de saída
+## Antes de escolher a stack
 
 Avance quando você conseguir descrever o fluxo completo sem citar tecnologia:
 

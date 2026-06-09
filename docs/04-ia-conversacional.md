@@ -40,6 +40,27 @@ Valide o resultado contra uma lista permitida. Se o formato estiver inválido,
 a confiança for baixa ou o destino estiver indisponível, use um atendimento
 padrão seguro.
 
+### Validando o retorno da triagem
+
+```ts
+const triageSchema = z.object({
+  intent: z.enum(["commercial", "support", "general"]),
+  specialist: z.enum(["sales", "support", "default"]),
+  confidence: z.number().min(0).max(1),
+  tags: z.array(z.string()).max(5),
+});
+
+const parsed = triageSchema.safeParse(JSON.parse(modelOutput));
+
+if (!parsed.success || parsed.data.confidence < 0.55) {
+  return safeFallback;
+}
+```
+
+Não use `JSON.parse` como única validação. O resultado também precisa respeitar
+tipos, categorias e limites conhecidos. Veja a
+[triagem completa](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/ai/triage.ts).
+
 ## Contexto sem excesso
 
 Enviar toda a conversa em cada chamada aumenta custo, latência e risco de
@@ -69,6 +90,25 @@ Centralize diferenças entre Gemini, OpenAI ou outro serviço:
 
 O domínio não deve importar SDKs de IA diretamente. Ele chama capacidades
 abstratas e recebe uma resposta normalizada.
+
+### Usando um contrato único de geração
+
+```ts
+const generated = await ai.generate({
+  systemInstruction,
+  message,
+  history: history.slice(-12),
+  temperature: 0.4,
+  maxOutputTokens: 800,
+});
+
+if (!generated.content.trim()) {
+  throw new Error("Empty model response");
+}
+```
+
+O adaptador do provedor converte esse contrato para o formato esperado pelo SDK
+e devolve conteúdo, modelo, provedor e latência no mesmo formato.
 
 ## Fallbacks necessários
 
@@ -112,7 +152,7 @@ Crie um conjunto de mensagens representativas e avalie:
 
 Teste novamente sempre que mudar modelo, instruções, categorias ou contexto.
 
-## Critério de saída
+## Antes de integrar com a interface
 
 Avance quando falhas de classificação e geração possuírem fallback, os
 metadados forem validados e o provedor puder ser trocado sem alterar o domínio.

@@ -47,6 +47,36 @@ Os nomes podem mudar, mas a separação importa:
 - **configuração** controla comportamento editável;
 - **insight** guarda uma análise derivada, nunca a fonte original.
 
+### Um schema mínimo
+
+```ts
+export const sessions = sqliteTable("sessions", {
+  id: text("id").primaryKey(),
+  contactId: text("contact_id")
+    .notNull()
+    .references(() => contacts.id),
+  status: text("status").notNull().default("open"),
+  primaryIntent: text("primary_intent"),
+  startedAt: text("started_at").notNull(),
+  endedAt: text("ended_at"),
+});
+
+export const messages = sqliteTable("messages", {
+  id: text("id").primaryKey(),
+  sessionId: text("session_id")
+    .notNull()
+    .references(() => sessions.id),
+  role: text("role").notNull(),
+  content: text("content").notNull(),
+  intent: text("intent"),
+  confidence: real("confidence"),
+});
+```
+
+O vínculo `contato -> sessão -> mensagem` preserva o histórico sem misturar a
+identidade da pessoa com cada atendimento. Veja o
+[schema genérico completo](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/db/schema.ts).
+
 ## Defina o dado mínimo
 
 Para cada campo, responda:
@@ -109,6 +139,28 @@ Defina limites por categoria para impedir que um único comportamento domine a
 pontuação. Exiba também o motivo do score. A operação precisa entender por que
 um contato foi priorizado.
 
+### Mantendo o score auditável
+
+```ts
+const engagement = Math.min(
+  signals.activeSessions * 4 + signals.meaningfulInteractions * 2,
+  30,
+);
+const intent = signals.hasRelevantIntent ? 25 : 0;
+const outcome = signals.completedGoal ? 20 : 0;
+
+return {
+  engagement,
+  intent,
+  outcome,
+  total: Math.min(engagement + intent + outcome, 100),
+};
+```
+
+Retornar o detalhamento evita que o score se torne uma caixa-preta. Os pesos
+acima são apenas ilustrativos; veja a
+[função completa](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/crm/lead-score.ts).
+
 ## Evite métricas inconsistentes
 
 Escolha uma definição oficial para cada indicador:
@@ -124,7 +176,7 @@ Escolha uma definição oficial para cada indicador:
 
 Documente essas definições perto das consultas de analytics.
 
-## Critério de saída
+## O que deve estar resolvido
 
 Avance quando for possível reconstruir uma sessão, explicar seus metadados e
 calcular as métricas sem depender do estado da interface.

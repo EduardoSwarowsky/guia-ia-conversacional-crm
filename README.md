@@ -5,7 +5,7 @@
 
 [![Documentação](https://img.shields.io/badge/tipo-guia%20de%20arquitetura-2563eb)](docs/01-fundamentos.md)
 [![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20TypeScript%20%7C%20SQLite-111827)](docs/02-arquitetura.md)
-[![Conteúdo](https://img.shields.io/badge/conteúdo-sem%20código%20proprietário-059669)](#limites-deste-guia)
+[![Conteúdo](https://img.shields.io/badge/código-exemplos%20práticos-059669)](#exemplos-de-código)
 
 [Ler o guia online](https://eduardoswarowsky.github.io/guia-ia-conversacional-crm/)
 · [Começar pelos fundamentos](docs/01-fundamentos.md)
@@ -60,6 +60,7 @@ informações que podem ser verificadas.
 | 7 | [Segurança](docs/07-seguranca-e-privacidade.md) | Proteger credenciais, rotas e dados pessoais |
 | 8 | [Roteiro](docs/08-roteiro-de-implementacao.md) | Implementar por fases com critérios de saída |
 | 9 | [Validação](docs/09-checklist-de-validacao.md) | Testar comportamento, dados, IA e operação |
+| 10 | [Referência de código](docs/10-referencia-de-codigo.md) | Conectar os fragmentos em um fluxo completo |
 
 ## Tecnologias abordadas
 
@@ -78,6 +79,25 @@ obrigatória.
 
 Em produção, cada peça pode ser substituída. A arquitetura continua válida com
 outro framework web, banco relacional, provedor de IA ou biblioteca de gráficos.
+
+## Exemplos de código
+
+Algumas decisões ficam mais claras quando aparecem em código. Por isso, os
+capítulos incluem trechos selecionados para:
+
+- gateway independente de provedor;
+- triagem com saída estruturada e fallback;
+- orquestração de uma mensagem;
+- schema relacional mínimo;
+- score com detalhamento dos fatores;
+- cliente web com cache local limitado;
+- consultas agregadas para analytics;
+- validação, autorização e rate limiting.
+
+Os capítulos mostram trechos curtos no contexto da decisão. As versões de
+referência ficam em [`examples/`](examples/README.md), e a
+[integração completa](docs/10-referencia-de-codigo.md) explica como os módulos se
+conectam.
 
 ## Princípios do projeto
 
@@ -103,11 +123,12 @@ Para manter o conteúdo seguro e reutilizável, este repositório não publica:
 - fórmulas exatas de pontuação;
 - credenciais, bancos, conversas ou dados reais;
 - identidade visual, catálogo ou conteúdo de produto;
-- componentes de interface ou endpoints prontos para copiar;
+- componentes completos, prompts finais ou endpoints da aplicação original;
 - detalhes operacionais exclusivos de uma implementação.
 
-Os diagramas, tabelas e fluxos descrevem contratos conceituais. Você ainda
-precisa definir suas entidades, políticas, regras e critérios de qualidade.
+Os exemplos cobrem somente as partes necessárias para explicar cada integração.
+Entidades, políticas, regras comerciais e adaptadores devem ser definidos de
+acordo com o projeto em que forem usados.
 
 ## Como usar
 

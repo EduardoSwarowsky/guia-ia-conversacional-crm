@@ -56,6 +56,29 @@ Ele não deve guardar:
 
 Ao retornar, confirme a sessão no servidor antes de confiar no estado local.
 
+### Criando contato e sessão
+
+```ts
+const contact = await requestJson<{ id: string }>("/api/contacts", {
+  method: "POST",
+  body: JSON.stringify(form),
+});
+
+const session = await requestJson<{ id: string }>("/api/sessions", {
+  method: "POST",
+  body: JSON.stringify({ contactId: contact.id }),
+});
+
+localStorage.setItem(
+  "conversation_session",
+  JSON.stringify({ contactId: contact.id, sessionId: session.id }),
+);
+```
+
+O navegador guarda identificadores opacos para continuidade. O histórico
+oficial continua no servidor. Veja o
+[cliente web de referência](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/frontend/chat-client.ts).
+
 ## Estados essenciais
 
 ### Carregamento
@@ -67,6 +90,18 @@ limite e permita cancelamento ou nova tentativa.
 
 Preserve o texto digitado, explique o que a pessoa pode fazer e não exponha
 detalhes internos do provedor.
+
+```ts
+try {
+  const result = await sendChatMessage(sessionId, draft);
+  appendMessage({ role: "assistant", content: result.reply });
+} catch {
+  setDraft(draft);
+  setError("Nao foi possivel enviar. Tente novamente.");
+} finally {
+  setIsSending(false);
+}
+```
 
 ### Offline
 
@@ -97,7 +132,7 @@ A pessoa deve perceber continuidade, mesmo que o sistema altere a
 especialidade. Mostre uma transferência apenas quando isso ajudar a definir
 expectativa, responsabilidade ou tempo de resposta.
 
-## Critério de saída
+## Antes de seguir
 
 Avance quando o fluxo funcionar em mobile e desktop, suportar retorno, erro e
 timeout, e deixar claro quais dados são coletados e por quê.

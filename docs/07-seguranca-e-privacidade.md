@@ -49,6 +49,30 @@ Para mensagens e formulários:
 
 Evite registrar o corpo completo de uma requisição por padrão.
 
+### Validando a entrada
+
+```ts
+const chatInputSchema = z.object({
+  sessionId: z.string().uuid(),
+  message: z.string().trim().min(1).max(2_000),
+});
+
+const input = chatInputSchema.parse(await request.json());
+```
+
+### Autorizando por papel
+
+```ts
+function requireRole(user: User | null, role: string) {
+  if (!user || !user.roles.includes(role)) {
+    throw new Error("Forbidden");
+  }
+}
+```
+
+Autorização é uma regra do servidor, não uma decisão do modelo. Veja os
+[controles genéricos](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/security/guards.ts).
+
 ## Considere ameaças específicas de IA
 
 | Ameaça | Controle |
@@ -94,7 +118,7 @@ Antes de tornar um repositório público, procure por:
 Apagar um arquivo no commit atual não o remove do histórico. Se houve vazamento,
 revogue o segredo primeiro e trate o histórico como uma operação separada.
 
-## Critério de saída
+## Antes de publicar
 
 Avance quando rotas administrativas exigirem autorização real, segredos nunca
 chegarem ao cliente, entradas tiverem limites e a política de dados estiver

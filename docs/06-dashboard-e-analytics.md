@@ -64,6 +64,24 @@ A interface deve receber séries e totais prontos para exibição. Isso evita:
 Use filtros de período, paginação e limites claros. Consultas pesadas podem ser
 pré-calculadas conforme o volume aumenta.
 
+### Uma consulta para a visão geral
+
+```sql
+SELECT
+  COUNT(DISTINCT c.id) AS total_contacts,
+  COUNT(DISTINCT s.id) AS total_sessions,
+  SUM(CASE WHEN s.status = 'resolved' THEN 1 ELSE 0 END)
+    AS resolved_sessions
+FROM contacts c
+LEFT JOIN sessions s ON s.contact_id = c.id
+WHERE s.started_at >= :period_start
+  AND s.started_at < :period_end;
+```
+
+Os parâmetros de período devem ser validados e aplicados no backend. A
+interface recebe apenas os totais necessários. Veja as
+[consultas de referência](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm/blob/master/examples/analytics/overview.sql).
+
 ## Desenhe estados honestos
 
 Todo bloco deve prever:
@@ -91,7 +109,7 @@ Mostre insights como apoio à investigação:
 Uma boa sugestão aponta onde olhar. Ela não oculta a fonte nem substitui a
 decisão humana.
 
-## Critério de saída
+## Antes de ampliar o dashboard
 
 Avance quando cada métrica tiver definição única, período explícito e ação
 associada, e quando a interface não precisar receber registros brutos para
