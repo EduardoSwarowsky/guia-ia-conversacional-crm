@@ -114,18 +114,76 @@ body {
 }
 
 .markdown-section pre {
-  background: #0f172a;
+  background: #0f172a !important;
   border: 1px solid #1e293b;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgb(15 23 42 / 10%);
   margin: 1.4rem 0;
-  padding: 1.15rem 1.25rem;
+  padding: 1rem 1.25rem !important;
 }
 
 .markdown-section pre > code {
-  color: #e2e8f0;
-  font-size: 0.88rem;
-  line-height: 1.65;
+  background: transparent !important;
+  color: #e2e8f0 !important;
+  font-size: 0.88rem !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  padding: 0.75rem 0.25rem !important;
+  white-space: pre !important;
+}
+
+.markdown-section pre::after {
+  color: #94a3b8;
+}
+
+.markdown-section pre .token.comment,
+.markdown-section pre .token.prolog,
+.markdown-section pre .token.doctype,
+.markdown-section pre .token.cdata {
+  color: #94a3b8;
+}
+
+.markdown-section pre .token.punctuation,
+.markdown-section pre .token.operator {
+  color: #cbd5e1;
+}
+
+.markdown-section pre .token.keyword,
+.markdown-section pre .token.control,
+.markdown-section pre .token.directive {
+  color: #c084fc;
+}
+
+.markdown-section pre .token.function,
+.markdown-section pre .token.method {
+  color: #60a5fa;
+}
+
+.markdown-section pre .token.string,
+.markdown-section pre .token.attr-value {
+  color: #86efac;
+}
+
+.markdown-section pre .token.number,
+.markdown-section pre .token.boolean {
+  color: #fbbf24;
+}
+
+.markdown-section pre .token.property,
+.markdown-section pre .token.tag,
+.markdown-section pre .token.constant,
+.markdown-section pre .token.symbol {
+  color: #f9a8d4;
+}
+
+.markdown-section pre .token.class-name,
+.markdown-section pre .token.builtin {
+  color: #fde68a;
+}
+
+.markdown-section pre .token.variable,
+.markdown-section pre .token.parameter {
+  color: #f8fafc;
 }
 
 .markdown-section .mermaid {
