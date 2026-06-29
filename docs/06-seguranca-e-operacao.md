@@ -1,7 +1,7 @@
-﻿# 6. Segurança e Operação
+# 6. Segurança e Operação
 
-[Anterior: Dashboard](05-dashboard-e-analytics.md) · [Início](../README.md) ·
-[Próximo: Checklist](07-checklist-de-integracao.md)
+[Anterior: Dashboard](#/docs/05-dashboard-e-analytics) · [Início](#/) ·
+[Próximo: Checklist](#/docs/07-checklist-de-integracao)
 
 Um ecossistema com chat, IA, CRM e dashboard atravessa várias superfícies de
 risco. A segurança precisa acompanhar as fronteiras de integração.
@@ -49,4 +49,4 @@ Registre eventos técnicos sem despejar dados sensíveis:
 
 Esses sinais ajudam a operar o sistema sem expor conversas completas em logs.
 
-[Próximo: Checklist](07-checklist-de-integracao.md)
+[Próximo: Checklist](#/docs/07-checklist-de-integracao)

@@ -1,6 +1,6 @@
-﻿# Glossário
+# Glossário
 
-[Início](../README.md) · [Checklist](07-checklist-de-integracao.md)
+[Início](#/) · [Checklist](#/docs/07-checklist-de-integracao)
 
 | Termo | Significado neste guia |
 |---|---|

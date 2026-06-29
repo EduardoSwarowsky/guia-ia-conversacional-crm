@@ -1,6 +1,6 @@
-﻿# 1. Visão Geral
+# 1. Visão Geral
 
-[Início](../README.md) · [Próximo: Mapa das tecnologias](02-mapa-das-tecnologias.md)
+[Início](#/) · [Próximo: Mapa das tecnologias](#/docs/02-mapa-das-tecnologias)
 
 Este guia olha para um ecossistema conversacional pelo ponto de vista da
 integração. A pergunta central é:
@@ -65,4 +65,4 @@ o histórico, o CRM e as métricas. Os campos variam por projeto.
 - armazenamento local tratado como banco;
 - IA decidindo permissões ou ações irreversíveis.
 
-[Próximo: Mapa das tecnologias](02-mapa-das-tecnologias.md)
+[Próximo: Mapa das tecnologias](#/docs/02-mapa-das-tecnologias)

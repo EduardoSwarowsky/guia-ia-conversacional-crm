@@ -4,13 +4,13 @@
 > ecossistema com atendimento conversacional, inteligência artificial, dados de
 > CRM e visualização analítica.
 
-[![Tipo](https://img.shields.io/badge/tipo-guia%20de%20integração-2563eb)](docs/01-visao-geral.md)
-[![Escopo](https://img.shields.io/badge/escopo-conceitual%20e%20técnico-059669)](#escopo)
-[![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20TypeScript%20%7C%20SQL%20%7C%20IA-111827)](docs/02-mapa-das-tecnologias.md)
+[![Tipo](https://img.shields.io/badge/tipo-guia%20de%20integração-2563eb)](#/docs/01-visao-geral)
+[![Escopo](https://img.shields.io/badge/escopo-conceitual%20e%20técnico-059669)](#/?id=escopo)
+[![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20TypeScript%20%7C%20SQL%20%7C%20IA-111827)](#/docs/02-mapa-das-tecnologias)
 
 [Ler online](https://eduardoswarowsky.github.io/guia-ia-conversacional-crm/)
-· [Visão geral](docs/01-visao-geral.md)
-· [Checklist](docs/07-checklist-de-integracao.md)
+· [Visão geral](#/docs/01-visao-geral)
+· [Checklist](#/docs/07-checklist-de-integracao)
 
 ---
 
@@ -47,13 +47,13 @@ flowchart LR
 
 | Capítulo | Tema | Pergunta respondida |
 |---|---|---|
-| [1. Visão geral](docs/01-visao-geral.md) | integração entre camadas | como as partes se encaixam? |
-| [2. Mapa das tecnologias](docs/02-mapa-das-tecnologias.md) | papel de cada tecnologia | onde Next.js, TypeScript, SQL e IA entram? |
-| [3. Chatbot e IA](docs/03-chatbot-e-ia.md) | fluxo conversacional | como conectar mensagem, contexto e modelo? |
-| [4. Dados e CRM](docs/04-dados-e-crm.md) | persistência e sinais | como transformar eventos em histórico útil? |
-| [5. Dashboard](docs/05-dashboard-e-analytics.md) | métricas e visualização | como exibir dados sem expor registros brutos? |
-| [6. Segurança](docs/06-seguranca-e-operacao.md) | operação e proteção | onde ficam chaves, limites e autorização? |
-| [7. Checklist](docs/07-checklist-de-integracao.md) | revisão final | o que validar antes de publicar? |
+| [1. Visão geral](#/docs/01-visao-geral) | integração entre camadas | como as partes se encaixam? |
+| [2. Mapa das tecnologias](#/docs/02-mapa-das-tecnologias) | papel de cada tecnologia | onde Next.js, TypeScript, SQL e IA entram? |
+| [3. Chatbot e IA](#/docs/03-chatbot-e-ia) | fluxo conversacional | como conectar mensagem, contexto e modelo? |
+| [4. Dados e CRM](#/docs/04-dados-e-crm) | persistência e sinais | como transformar eventos em histórico útil? |
+| [5. Dashboard](#/docs/05-dashboard-e-analytics) | métricas e visualização | como exibir dados sem expor registros brutos? |
+| [6. Segurança](#/docs/06-seguranca-e-operacao) | operação e proteção | onde ficam chaves, limites e autorização? |
+| [7. Checklist](#/docs/07-checklist-de-integracao) | revisão final | o que validar antes de publicar? |
 
 ## Como ler
 

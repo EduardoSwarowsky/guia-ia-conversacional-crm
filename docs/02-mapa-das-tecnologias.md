@@ -1,7 +1,7 @@
-﻿# 2. Mapa das Tecnologias
+# 2. Mapa das Tecnologias
 
-[Anterior: Visão geral](01-visao-geral.md) · [Início](../README.md) ·
-[Próximo: Chatbot e IA](03-chatbot-e-ia.md)
+[Anterior: Visão geral](#/docs/01-visao-geral) · [Início](#/) ·
+[Próximo: Chatbot e IA](#/docs/03-chatbot-e-ia)
 
 As tecnologias abaixo são exemplos de papéis arquiteturais. Elas podem ser
 trocadas, desde que a fronteira entre as camadas continue clara.
@@ -82,4 +82,4 @@ type OverviewMetric = {
 Essa separação mantém a visualização leve e evita expor dados pessoais sem
 necessidade.
 
-[Próximo: Chatbot e IA](03-chatbot-e-ia.md)
+[Próximo: Chatbot e IA](#/docs/03-chatbot-e-ia)

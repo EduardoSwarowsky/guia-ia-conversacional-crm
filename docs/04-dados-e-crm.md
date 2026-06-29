@@ -1,7 +1,7 @@
-﻿# 4. Dados e CRM
+# 4. Dados e CRM
 
-[Anterior: Chatbot e IA](03-chatbot-e-ia.md) · [Início](../README.md) ·
-[Próximo: Dashboard](05-dashboard-e-analytics.md)
+[Anterior: Chatbot e IA](#/docs/03-chatbot-e-ia) · [Início](#/) ·
+[Próximo: Dashboard](#/docs/05-dashboard-e-analytics)
 
 O CRM surge quando os eventos da conversa são registrados de forma organizada.
 O objetivo não é armazenar tudo, mas preservar o que ajuda a acompanhar uma
@@ -71,4 +71,4 @@ Status, tags e score devem ser derivados de sinais observáveis:
 Evite esconder decisões importantes dentro de um score único. Quando houver
 priorização, mostre também os fatores usados.
 
-[Próximo: Dashboard](05-dashboard-e-analytics.md)
+[Próximo: Dashboard](#/docs/05-dashboard-e-analytics)
