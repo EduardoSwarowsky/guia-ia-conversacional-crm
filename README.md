@@ -11,6 +11,7 @@
 [Ler online](https://eduardoswarowsky.github.io/guia-ia-conversacional-crm/)
 · [Visão geral](#/docs/01-visao-geral)
 · [Checklist](#/docs/07-checklist-de-integracao)
+· [Exemplos](#/docs/exemplos-de-integracao)
 
 ---
 
@@ -54,12 +55,14 @@ flowchart LR
 | [5. Dashboard](#/docs/05-dashboard-e-analytics) | métricas e visualização | como exibir dados sem expor registros brutos? |
 | [6. Segurança](#/docs/06-seguranca-e-operacao) | operação e proteção | onde ficam chaves, limites e autorização? |
 | [7. Checklist](#/docs/07-checklist-de-integracao) | revisão final | o que validar antes de publicar? |
+| [Exemplos](#/docs/exemplos-de-integracao) | snippets genéricos | como representar as fronteiras em código? |
 
 ## Como ler
 
 Leia como um material de arquitetura aplicada. Os trechos de código são pequenos
 e servem para mostrar contratos entre tecnologias, não para entregar uma
-implementação pronta.
+implementação pronta. A página de [exemplos](#/docs/exemplos-de-integracao)
+organiza os snippets por fronteira de integração.
 
 ## Limites
 

@@ -43,3 +43,12 @@ Use esta lista para revisar a integração, não para validar um produto complet
 - [ ] Blocos de código não quebram a largura da tela.
 - [ ] Diagramas podem rolar horizontalmente.
 - [ ] A leitura funciona em celular, tablet e desktop.
+
+## Exemplos
+
+- [ ] Os snippets são curtos e genéricos.
+- [ ] Nenhum exemplo entrega uma rota completa pronta para uso direto.
+- [ ] As regras de negócio específicas ficam fora do guia.
+- [ ] Cada exemplo aponta para uma fronteira de integração clara.
+
+Consulte: [Exemplos de integração](#/docs/exemplos-de-integracao).

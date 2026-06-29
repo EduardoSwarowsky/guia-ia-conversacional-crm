@@ -51,6 +51,8 @@ interface AIResponse {
 Com esse contrato, o sistema pode trocar modelo, aplicar fallback ou registrar
 latência sem alterar a interface ou o banco.
 
+Exemplo relacionado: [gateway de IA](#/docs/exemplos-de-integracao?id=gateway-de-ia).
+
 ## Camada de dados
 
 O banco não precisa conhecer a interface. Ele deve registrar conceitos estáveis:
@@ -81,5 +83,7 @@ type OverviewMetric = {
 
 Essa separação mantém a visualização leve e evita expor dados pessoais sem
 necessidade.
+
+Exemplo relacionado: [consulta para dashboard](#/docs/exemplos-de-integracao?id=consulta-para-dashboard).
 
 [Próximo: Chatbot e IA](#/docs/03-chatbot-e-ia)

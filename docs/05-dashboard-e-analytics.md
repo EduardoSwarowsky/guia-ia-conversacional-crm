@@ -62,4 +62,6 @@ type InsightInput = {
 
 O texto gerado não substitui a métrica nem a decisão humana.
 
+Exemplos relacionados: [consulta para dashboard](#/docs/exemplos-de-integracao?id=consulta-para-dashboard) e [insight com IA](#/docs/exemplos-de-integracao?id=insight-com-ia).
+
 [Próximo: Segurança](#/docs/06-seguranca-e-operacao)

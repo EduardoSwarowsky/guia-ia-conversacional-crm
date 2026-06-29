@@ -56,6 +56,8 @@ type IntegrationEvent = {
 Esse contrato resume a ideia: cada interação gera um evento que pode alimentar
 o histórico, o CRM e as métricas. Os campos variam por projeto.
 
+Exemplo relacionado: [contrato entre camadas](#/docs/exemplos-de-integracao?id=contrato-entre-camadas).
+
 ## O que evitar
 
 - frontend chamando provedor de IA diretamente;

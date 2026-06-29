@@ -49,4 +49,6 @@ Registre eventos técnicos sem despejar dados sensíveis:
 
 Esses sinais ajudam a operar o sistema sem expor conversas completas em logs.
 
+Exemplo relacionado: [validação e limites](#/docs/exemplos-de-integracao?id=validacao-e-limites).
+
 [Próximo: Checklist](#/docs/07-checklist-de-integracao)

@@ -1,6 +1,6 @@
 # Glossário
 
-[Início](#/) · [Checklist](#/docs/07-checklist-de-integracao)
+[Início](#/) · [Checklist](#/docs/07-checklist-de-integracao) · [Exemplos](#/docs/exemplos-de-integracao)
 
 | Termo | Significado neste guia |
 |---|---|
@@ -17,7 +17,10 @@
 | insight | interpretação derivada de métricas ou conversas |
 | intenção | categoria que representa a necessidade principal |
 | metadado | dado que descreve uma mensagem ou sessão |
+| payload | conteúdo estruturado transportado em um evento ou chamada de API |
 | provedor | serviço que disponibiliza um modelo de linguagem |
+| rate limit | limite de chamadas para reduzir abuso, custo e instabilidade |
 | score | indicador explicável usado para ordenação ou priorização |
+| SDK | biblioteca oficial ou cliente usado para falar com um serviço externo |
 | sessão | unidade de atendimento composta por mensagens e eventos |
 | triagem | etapa que identifica intenção e destino recomendado |

@@ -71,4 +71,6 @@ Status, tags e score devem ser derivados de sinais observáveis:
 Evite esconder decisões importantes dentro de um score único. Quando houver
 priorização, mostre também os fatores usados.
 
+Exemplo relacionado: [evento para CRM](#/docs/exemplos-de-integracao?id=evento-para-crm).
+
 [Próximo: Dashboard](#/docs/05-dashboard-e-analytics)

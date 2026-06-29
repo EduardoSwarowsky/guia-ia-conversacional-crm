@@ -6,4 +6,5 @@
 - [5. Dashboard e analytics](#/docs/05-dashboard-e-analytics)
 - [6. Segurança e operação](#/docs/06-seguranca-e-operacao)
 - [7. Checklist de integração](#/docs/07-checklist-de-integracao)
+- [Exemplos de integração](#/docs/exemplos-de-integracao)
 - [Glossário](#/docs/glossario)
