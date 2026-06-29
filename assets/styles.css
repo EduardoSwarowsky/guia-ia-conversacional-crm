@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --theme-color: #2563eb;
   --base-font-size: 16px;
   --base-line-height: 1.7;
@@ -17,6 +17,47 @@
   --code-inline-color: #1e3a8a;
 }
 
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.content {
+  min-width: 0;
+}
+
+.markdown-section {
+  width: min(100%, 920px);
+}
+
+.markdown-section pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-section table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-section .mermaid {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-section img,
+.markdown-section svg {
+  max-width: 100%;
+  height: auto;
+}
 body {
   color: #334155;
   font-family:
@@ -90,10 +131,13 @@ body {
 .markdown-section table {
   border-radius: 12px;
   box-shadow: 0 0 0 1px #e2e8f0;
-  display: table;
+  display: block;
   margin: 1.4rem 0;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .markdown-section th {
@@ -222,17 +266,80 @@ body {
   font-weight: 650;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .markdown-section {
-    padding: 28px 22px 56px;
+    max-width: none;
+    padding: 34px 28px 64px;
+    width: 100%;
   }
 
   .markdown-section h1 {
     font-size: 2rem;
   }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 12px;
+  }
+
+  .markdown-section {
+    padding: 26px 18px 56px;
+  }
+
+  .markdown-section h1 {
+    font-size: 1.8rem;
+    line-height: 1.15;
+  }
+
+  .markdown-section h2 {
+    font-size: 1.35rem;
+    margin-top: 2.2rem;
+    padding-top: 1.4rem;
+  }
+
+  .markdown-section h3 {
+    font-size: 1.15rem;
+  }
+
+  .markdown-section pre {
+    border-radius: 10px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding: 0.85rem 0.95rem !important;
+  }
+
+  .markdown-section pre > code {
+    font-size: 0.8rem !important;
+    line-height: 1.55 !important;
+    padding: 0.55rem 0.1rem !important;
+  }
 
   .markdown-section table {
-    display: block;
-    overflow-x: auto;
+    border-radius: 10px;
+  }
+
+  .markdown-section .mermaid {
+    padding: 1rem;
+  }
+
+  .cover-main h1 {
+    font-size: clamp(2.1rem, 12vw, 3.25rem);
+  }
+
+  .cover-main blockquote {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .markdown-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .search {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 }

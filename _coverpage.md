@@ -1,7 +1,7 @@
-# Guia de IA Conversacional, CRM e Analytics
+﻿# Guia de Integração
 
-Arquitetura, decisões e roteiro de implementação para transformar conversas em
-experiência, relacionamento e informação operacional.
+Chatbot, IA, CRM e dashboard em uma arquitetura coesa, sem transformar a ideia em
+um produto pronto.
 
-[Começar a leitura](#/docs/01-fundamentos)
+[Começar](#/docs/01-visao-geral)
 [Ver no GitHub](https://github.com/EduardoSwarowsky/guia-ia-conversacional-crm)
