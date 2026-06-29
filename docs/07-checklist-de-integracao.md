@@ -1,7 +1,7 @@
 # 7. Checklist de Integração
 
-[Anterior: Segurança](#/docs/06-seguranca-e-operacao) · [Início](#/) ·
-[Glossário](#/docs/glossario)
+[Anterior: Segurança](/docs/06-seguranca-e-operacao) · [Início](/) ·
+[Glossário](/docs/glossario)
 
 Use esta lista para revisar a integração, não para validar um produto completo.
 
@@ -51,4 +51,4 @@ Use esta lista para revisar a integração, não para validar um produto complet
 - [ ] As regras de negócio específicas ficam fora do guia.
 - [ ] Cada exemplo aponta para uma fronteira de integração clara.
 
-Consulte: [Exemplos de integração](#/docs/exemplos-de-integracao).
+Consulte: [Exemplos de integração](/docs/exemplos-de-integracao).

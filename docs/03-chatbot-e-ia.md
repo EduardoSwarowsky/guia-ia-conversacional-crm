@@ -1,7 +1,7 @@
 # 3. Chatbot e IA
 
-[Anterior: Mapa das tecnologias](#/docs/02-mapa-das-tecnologias) ·
-[Início](#/) · [Próximo: Dados e CRM](#/docs/04-dados-e-crm)
+[Anterior: Mapa das tecnologias](/docs/02-mapa-das-tecnologias) ·
+[Início](/) · [Próximo: Dados e CRM](/docs/04-dados-e-crm)
 
 A integração entre chat e IA deve ser pensada como uma troca controlada: o
 frontend envia a mensagem, o backend monta contexto permitido e o provedor
@@ -76,6 +76,6 @@ O fallback pode ser uma resposta neutra, encaminhamento manual ou uma pergunta
 de esclarecimento. O importante é que a interface não dependa de uma resposta
 perfeita do modelo.
 
-Exemplos relacionados: [fluxo API, chat e IA](#/docs/exemplos-de-integracao?id=fluxo-api-chat-e-ia) e [gateway de IA](#/docs/exemplos-de-integracao?id=gateway-de-ia).
+Exemplos relacionados: [fluxo API, chat e IA](/docs/exemplos-de-integracao?id=fluxo-api-chat-e-ia) e [gateway de IA](/docs/exemplos-de-integracao?id=gateway-de-ia).
 
-[Próximo: Dados e CRM](#/docs/04-dados-e-crm)
+[Próximo: Dados e CRM](/docs/04-dados-e-crm)

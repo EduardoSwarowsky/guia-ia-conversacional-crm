@@ -1,7 +1,7 @@
 # 2. Mapa das Tecnologias
 
-[Anterior: Visão geral](#/docs/01-visao-geral) · [Início](#/) ·
-[Próximo: Chatbot e IA](#/docs/03-chatbot-e-ia)
+[Anterior: Visão geral](/docs/01-visao-geral) · [Início](/) ·
+[Próximo: Chatbot e IA](/docs/03-chatbot-e-ia)
 
 As tecnologias abaixo são exemplos de papéis arquiteturais. Elas podem ser
 trocadas, desde que a fronteira entre as camadas continue clara.
@@ -51,7 +51,7 @@ interface AIResponse {
 Com esse contrato, o sistema pode trocar modelo, aplicar fallback ou registrar
 latência sem alterar a interface ou o banco.
 
-Exemplo relacionado: [gateway de IA](#/docs/exemplos-de-integracao?id=gateway-de-ia).
+Exemplo relacionado: [gateway de IA](/docs/exemplos-de-integracao?id=gateway-de-ia).
 
 ## Camada de dados
 
@@ -84,6 +84,6 @@ type OverviewMetric = {
 Essa separação mantém a visualização leve e evita expor dados pessoais sem
 necessidade.
 
-Exemplo relacionado: [consulta para dashboard](#/docs/exemplos-de-integracao?id=consulta-para-dashboard).
+Exemplo relacionado: [consulta para dashboard](/docs/exemplos-de-integracao?id=consulta-para-dashboard).
 
-[Próximo: Chatbot e IA](#/docs/03-chatbot-e-ia)
+[Próximo: Chatbot e IA](/docs/03-chatbot-e-ia)
