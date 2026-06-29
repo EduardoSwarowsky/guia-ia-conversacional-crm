@@ -1,6 +1,6 @@
 # Exemplos de Integração
 
-[Início](/) · [Checklist](/docs/07-checklist-de-integracao) · [Glossário](/docs/glossario)
+[Início](/) · [Checklist](/docs/07-checklist-de-integracao.md) · [Glossário](/docs/glossario.md)
 
 Estes exemplos são fragmentos de referência. Eles mostram formatos, fronteiras e
 responsabilidades entre camadas, mas não representam uma aplicação completa.

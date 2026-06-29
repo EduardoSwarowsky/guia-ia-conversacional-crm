@@ -1,7 +1,7 @@
 # 4. Dados e CRM
 
-[Anterior: Chatbot e IA](/docs/03-chatbot-e-ia) · [Início](/) ·
-[Próximo: Dashboard](/docs/05-dashboard-e-analytics)
+[Anterior: Chatbot e IA](/docs/03-chatbot-e-ia.md) · [Início](/) ·
+[Próximo: Dashboard](/docs/05-dashboard-e-analytics.md)
 
 O CRM surge quando os eventos da conversa são registrados de forma organizada.
 O objetivo não é armazenar tudo, mas preservar o que ajuda a acompanhar uma
@@ -71,6 +71,6 @@ Status, tags e score devem ser derivados de sinais observáveis:
 Evite esconder decisões importantes dentro de um score único. Quando houver
 priorização, mostre também os fatores usados.
 
-Exemplo relacionado: [evento para CRM](/docs/exemplos-de-integracao?id=evento-para-crm).
+Exemplo relacionado: [evento para CRM](/docs/exemplos-de-integracao.md#evento-para-crm).
 
-[Próximo: Dashboard](/docs/05-dashboard-e-analytics)
+[Próximo: Dashboard](/docs/05-dashboard-e-analytics.md)

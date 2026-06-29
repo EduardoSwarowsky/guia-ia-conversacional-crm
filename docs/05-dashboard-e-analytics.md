@@ -1,7 +1,7 @@
 # 5. Dashboard e Analytics
 
-[Anterior: Dados e CRM](/docs/04-dados-e-crm) · [Início](/) ·
-[Próximo: Segurança](/docs/06-seguranca-e-operacao)
+[Anterior: Dados e CRM](/docs/04-dados-e-crm.md) · [Início](/) ·
+[Próximo: Segurança](/docs/06-seguranca-e-operacao.md)
 
 O dashboard é a camada de leitura operacional. Ele não precisa conhecer prompts
 ou detalhes do chat; precisa receber métricas confiáveis.
@@ -62,6 +62,6 @@ type InsightInput = {
 
 O texto gerado não substitui a métrica nem a decisão humana.
 
-Exemplos relacionados: [consulta para dashboard](/docs/exemplos-de-integracao?id=consulta-para-dashboard) e [insight com IA](/docs/exemplos-de-integracao?id=insight-com-ia).
+Exemplos relacionados: [consulta para dashboard](/docs/exemplos-de-integracao.md#consulta-para-dashboard) e [insight com IA](/docs/exemplos-de-integracao.md#insight-com-ia).
 
-[Próximo: Segurança](/docs/06-seguranca-e-operacao)
+[Próximo: Segurança](/docs/06-seguranca-e-operacao.md)
