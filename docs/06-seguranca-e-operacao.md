@@ -1,6 +1,6 @@
 # 6. Segurança e Operação
 
-[Anterior: Dashboard](05-dashboard-e-analytics.md) · [Início](../) ·
+[Anterior: Dashboard](05-dashboard-e-analytics.md) · [Início](../README.md) ·
 [Próximo: Checklist](07-checklist-de-integracao.md)
 
 Um ecossistema com chat, IA, CRM e dashboard atravessa várias superfícies de

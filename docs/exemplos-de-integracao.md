@@ -1,6 +1,6 @@
 # Exemplos de Integração
 
-[Início](../) · [Checklist](07-checklist-de-integracao.md) · [Glossário](glossario.md)
+[Início](../README.md) · [Checklist](07-checklist-de-integracao.md) · [Glossário](glossario.md)
 
 Estes exemplos são fragmentos de referência. Eles mostram formatos, fronteiras e
 responsabilidades entre camadas, mas não representam uma aplicação completa.

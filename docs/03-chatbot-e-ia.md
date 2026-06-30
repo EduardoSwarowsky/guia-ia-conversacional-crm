@@ -1,7 +1,7 @@
 # 3. Chatbot e IA
 
 [Anterior: Mapa das tecnologias](02-mapa-das-tecnologias.md) ·
-[Início](../) · [Próximo: Dados e CRM](04-dados-e-crm.md)
+[Início](../README.md) · [Próximo: Dados e CRM](04-dados-e-crm.md)
 
 A integração entre chat e IA deve ser pensada como uma troca controlada: o
 frontend envia a mensagem, o backend monta contexto permitido e o provedor

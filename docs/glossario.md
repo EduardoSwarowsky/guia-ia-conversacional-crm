@@ -1,6 +1,6 @@
 # Glossário
 
-[Início](../) · [Checklist](07-checklist-de-integracao.md) · [Exemplos](exemplos-de-integracao.md)
+[Início](../README.md) · [Checklist](07-checklist-de-integracao.md) · [Exemplos](exemplos-de-integracao.md)
 
 | Termo | Significado neste guia |
 |---|---|

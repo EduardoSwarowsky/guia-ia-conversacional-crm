@@ -1,6 +1,6 @@
 # 5. Dashboard e Analytics
 
-[Anterior: Dados e CRM](04-dados-e-crm.md) · [Início](../) ·
+[Anterior: Dados e CRM](04-dados-e-crm.md) · [Início](../README.md) ·
 [Próximo: Segurança](06-seguranca-e-operacao.md)
 
 O dashboard é a camada de leitura operacional. Ele não precisa conhecer prompts

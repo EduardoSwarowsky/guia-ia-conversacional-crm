@@ -1,6 +1,6 @@
 # 2. Mapa das Tecnologias
 
-[Anterior: Visão geral](01-visao-geral.md) · [Início](../) ·
+[Anterior: Visão geral](01-visao-geral.md) · [Início](../README.md) ·
 [Próximo: Chatbot e IA](03-chatbot-e-ia.md)
 
 As tecnologias abaixo são exemplos de papéis arquiteturais. Elas podem ser

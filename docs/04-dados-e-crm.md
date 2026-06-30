@@ -1,6 +1,6 @@
 # 4. Dados e CRM
 
-[Anterior: Chatbot e IA](03-chatbot-e-ia.md) · [Início](../) ·
+[Anterior: Chatbot e IA](03-chatbot-e-ia.md) · [Início](../README.md) ·
 [Próximo: Dashboard](05-dashboard-e-analytics.md)
 
 O CRM surge quando os eventos da conversa são registrados de forma organizada.

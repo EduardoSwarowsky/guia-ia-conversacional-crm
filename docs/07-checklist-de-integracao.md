@@ -1,6 +1,6 @@
 # 7. Checklist de Integração
 
-[Anterior: Segurança](06-seguranca-e-operacao.md) · [Início](../) ·
+[Anterior: Segurança](06-seguranca-e-operacao.md) · [Início](../README.md) ·
 [Glossário](glossario.md)
 
 Use esta lista para revisar a integração, não para validar um produto completo.

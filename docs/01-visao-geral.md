@@ -1,6 +1,6 @@
 # 1. Visão Geral
 
-[Início](../) · [Próximo: Mapa das tecnologias](02-mapa-das-tecnologias.md)
+[Início](../README.md) · [Próximo: Mapa das tecnologias](02-mapa-das-tecnologias.md)
 
 Este guia olha para um ecossistema conversacional pelo ponto de vista da
 integração. A pergunta central é:
